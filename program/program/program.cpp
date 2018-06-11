@@ -33,7 +33,7 @@ void CFeet::setinches(int ich)
 }
 void CFeet::display()
 {
-	cout << feet << "Ó¢³ß" << inches << "Ó¢´ç" << endl;
+	cout << "»ùÀà  " << feet << "Ó¢³ß" << inches << "Ó¢´ç" << endl;
 }
 int CFeet::getfeet()
 {
@@ -43,7 +43,15 @@ int CFeet::getinches()
 {
 	return inches;
 }
-
+class CMyfeet :public CFeet
+{
+public:
+	void display();
+};
+void CMyfeet::display()
+{
+	cout << "ÅÉÉúÀà" << feet << "Ó¢³ß" << inches << "Ó¢´ç" << endl;
+}
 
 int main()
 {
@@ -52,5 +60,4 @@ int main()
 	Afeet.setinches(8);
 	Afeet.display();
 	return 0;
-    return 0;
 }
